@@ -1,0 +1,27 @@
+@mixin meuFlex{
+    display: flex;
+    justify-content: center;
+}
+
+.flex{
+    @include meuFlex;
+    flex-direction: column;
+	margin: 5% auto;
+	
+	h1{
+    	@include meuFlex;
+	}
+
+    ul{
+    	list-style-type: none;
+    	@include meuFlex;
+    }
+
+    li{
+    	width: 12%;
+    }
+}
+
+.frase{
+	@include meuFlex;
+}
